@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Footer from './Components/Footer';
+import Home from './Components/Home';
+import Navbar from './Components/Navbar';
+import Particle from './Components/Particle';
+import Projects from './Components/Projects';
+import Reminder from './Components/Reminder';
+import Stack from './Components/Stack';
+import Hacks from './Components/Hacks';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App relative">
+      <Particle />
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/projects' element={<Projects />}/>
+        <Route path='/reminder' element={<Reminder />}/>
+        <Route path='/stack' element={<Stack />}/>
+        <Route path='/hacks' element={<Hacks />}/>
+      </Routes>
+      <Footer />
     </div>
   );
 }
