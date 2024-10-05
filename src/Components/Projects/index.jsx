@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ProjectList from '../ProjectList'
 
 const Projects = () => {
+    useEffect(()=>{
+        document.title = "Rohit's Portfolio - Projects"
+    },[]);
     return (
         <div className='w-full md:h-[85%] flex justify-center'>
             <div className='w-full md:w-1/2 mx-2 py-[20%] md:py-[8%]'>

@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const About = () => {
+    useEffect(()=>{
+        document.title = "Rohit's Portfolio - About"
+    },[]);
     return (
         <div className='w-full md:h-[180vh] flex justify-center relative'>
             <div className='w-full md:w-1/2 mx-2 py-[20%] md:py-[8%]'>

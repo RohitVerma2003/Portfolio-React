@@ -1,9 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { TypeAnimation } from 'react-type-animation'
 import Popup from '../Popup';
 
 const Home = () => {
     const [show, setShow] = useState(false);
+
+    useEffect(()=>{
+        document.title = "Rohit's Portfolio - Home"
+    },[]);
+
     return (
         <>
             {show && <Popup show={show} setShow={setShow} />}
