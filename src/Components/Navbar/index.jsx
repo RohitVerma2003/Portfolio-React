@@ -16,7 +16,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="flex justify-center gap-1 md:gap-10 border-b border-mid-blue h-min px-5 overflow-x-auto w-full md:w-auto mt-5 md:mt-0 order-2 md:order-none">
-                    <p className="uppercase p-2 border-0 rounded hover:bg-neutral-800 transition ease-in-out text-mid-blue text-sm font-light hover:text-white cursor-pointer h-min">about</p>
+                    <Link to={"/about"}><p className="uppercase p-2 border-0 rounded hover:bg-neutral-800 transition ease-in-out text-mid-blue text-sm font-light hover:text-white cursor-pointer h-min">about</p></Link>
                     <Link to={"/projects"}><p className="uppercase p-2 border-0 rounded hover:bg-neutral-800 transition ease-in-out text-mid-blue text-sm font-light hover:text-white cursor-pointer h-min">project</p></Link>
                     <Link to={"/reminder"}><p className="uppercase p-2 border-0 rounded hover:bg-neutral-800 transition ease-in-out text-mid-blue text-sm font-light hover:text-white cursor-pointer h-min">reminder</p></Link>
                     <Link to={"/stack"}><p className="uppercase p-2 border-0 rounded hover:bg-neutral-800 transition ease-in-out text-mid-blue text-sm font-light hover:text-white cursor-pointer h-min">stacks</p></Link>
