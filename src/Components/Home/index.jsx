@@ -9,6 +9,15 @@ const Home = () => {
         document.title = "Rohit's Portfolio - Home"
     },[]);
 
+    const handleKeyDown = (e)=>{
+        if(e.ctrlKey && e.key === 'k'){
+            e.preventDefault();
+            setShow(true);
+        }
+    }
+
+    window.addEventListener("keydown" , handleKeyDown);
+
     return (
         <>
             {show && <Popup show={show} setShow={setShow} />}
