@@ -9,7 +9,7 @@ const About = () => {
             <div className='w-full md:w-1/2 mx-2 py-[20%] md:py-[8%]'>
                 <h1 className='text-5xl font-semibold text-[cyan]'>Learning. Maturing.</h1>
                 <div className='flex justify-center flex-wrap md:flex-nowrap items-center my-10 top-16 gap-5'>
-                    <div className='w-2/3 md:w-1/2 h-2/3 border rounded-md'><img src="/Icons/why.jpg" alt="..." className='w-full h-full z-10 bg-contain' /></div>
+                    <div className='w-2/3 md:w-1/2 h-2/3 rounded-md'><img src="/Icons/why.jpg" alt="..." className='w-full h-full z-10 bg-contain rounded-md' /></div>
                     <div className='w-3/4 md:w-1/2 h-2/3 text-justify'>
                         <p className='text-mid-blue font-light mt-3'>👋 Hello there! <span className='text-white font-base'>I'm Rohit Verma</span>, a B.Tech CS student.</p>
                         <p className='text-mid-blue font-light mt-3'>👋I'm all about <span className='text-white font-base'>coding</span> and <span className='text-white font-base'>problem-solving</span>. Currently diving into the world of <span className='text-white font-base'>algorithms and software engineering</span>. I love collaborating on <span className='text-white font-base'>projects and learning as I go</span>.</p>
