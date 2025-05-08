@@ -1,9 +1,9 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 
 const Karaoke = () => {
     const ref = useRef(null);
     const barsRef = useRef([]);
-    const [audioToggle, setAudioToggle] = useState(true);
+    const [audioToggle, setAudioToggle] = useState(false);
 
     const handleClick = () => {
         const newValue = !audioToggle;
@@ -29,10 +29,11 @@ const Karaoke = () => {
                         key={index}
                         ref={el => (barsRef.current[index] = el)}
                         className="w-1 h-100 bg-white border-r-2 bar-animate"
+                        style={{animationPlayState : 'paused'}}
                     ></span>
                 ))}
             </div>
-            <audio ref={ref} src="/intersteller.mp3" loop={true} autoPlay={true} className="hidden"></audio>
+            <audio ref={ref} src="/intersteller.mp3" loop autoPlay={false} className="hidden"></audio>
         </div>
     );
 };

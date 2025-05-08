@@ -19,7 +19,7 @@ const Hacks = () => {
             target='_blank'
           >
             <li className='border-b border-b-1 border-white w-fit'>
-              Smart India Hackathon
+              Smart India Hackathon Finalist
             </li>
           </a>
         </ul>
