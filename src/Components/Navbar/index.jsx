@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Popup from '../Popup';
+import Karaoke from '../Karaoke';
 
 const Navbar = () => {
     const [show , setShow] = useState(false);
@@ -22,8 +23,9 @@ const Navbar = () => {
                     <Link to={"/stack"}><p className="uppercase p-2 border-0 rounded hover:bg-neutral-800 transition ease-in-out text-mid-blue text-sm font-light hover:text-white cursor-pointer h-min">stacks</p></Link>
                     <Link to={"/hacks"}><p className="uppercase p-2 border-0 rounded hover:bg-neutral-800 transition ease-in-out text-mid-blue text-sm font-light hover:text-white cursor-pointer h-min">hacks</p></Link>
                 </div>
-                <div onClick={()=>setShow(true)}>
-                    <img src="/Icons/command.png" alt="..." width={22} className="invert mr-5 md:mr-10 cursor-pointer m-auto" />
+                <div className='flex gap-4 items-center'>
+                    <Karaoke/>
+                    <img src="/Icons/command.png" onClick={()=>setShow(true)} alt="..." width={22} className="invert mr-5 md:mr-10 cursor-pointer m-auto" />
                 </div>
             </div>
         </>

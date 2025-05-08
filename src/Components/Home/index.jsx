@@ -21,7 +21,7 @@ const Home = () => {
     return (
         <>
             {show && <Popup show={show} setShow={setShow} />}
-            <div className='w-full h-[72%] md:h-5/6 flex justify-center'>
+            <div className='w-full h-[470px] md:h-5/6 flex justify-center'>
                 <div className='w-full md:w-1/2 mx-5 py-[30%] md:py-[12%]'>
                     <h1 className='text-5xl mx-2 font-medium text-white cursor-pointer m-auto'>Rohit Verma</h1>
                     <div className='mt-6 mx-2 h-6'>
