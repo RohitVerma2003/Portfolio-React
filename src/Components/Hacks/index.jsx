@@ -8,9 +8,8 @@ const Hacks = () => {
     <div className='w-full h-[73%] md:h-[83%] flex justify-center'>
       <div className='w-full md:w-1/2 mx-2 py-[20%] md:py-[17%]'>
         <div className='text-mid-blue text-normal font-light'>
-          As <span className='text-white'>Charles Dickens</span> put it: It was
-          the <span className='text-white'>best</span> of times, it was the{' '}
-          <span className='text-white'>worst</span> of times.
+          As long as I am <span className='text-white'>living</span>, there are{' '}
+          <span className='text-white'>infinite</span> chances.{' '}
         </div>
         <div className='text-xl font-medium text-white my-3'>2024</div>
         <ul className='text-white text-normal font-light mx-10 list-disc'>

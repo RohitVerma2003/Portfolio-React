@@ -5,17 +5,17 @@ const About = () => {
     document.title = "Rohit's Portfolio - About"
   }, [])
   return (
-    <div className='w-full md:h-max flex justify-center relative'>
+    <div className='w-full h-[70%] md:h-4/5 flex justify-center relative overflow-scroll'>
       <div className='w-full md:w-1/2 mx-2 py-[20%] md:py-[8%]'>
-        <h1 className='text-5xl font-semibold text-[cyan]'>
+        <h1 className='text-3xl md:text-5xl text-center font-semibold text-[cyan]'>
           Learning. Maturing.
         </h1>
-        <div className='flex justify-center flex-wrap md:flex-nowrap items-center my-10 top-16 gap-5'>
-          <div className='w-2/3 md:w-2/3 h-[70vh]'>
+        <div className='h-auto flex justify-center flex-wrap md:flex-nowrap items-center my-10 gap-5'>
+          <div className='w-1/3 md:h-[50vh] md:w-1/3 rounded-md'>
             <img
               src='/Icons/Rohit.jpg'
               alt='...'
-              className='w-full h-full z-10 rounded-md object-cover'
+              className='rounded-md object-cover w-full h-full'
             />
           </div>
           <div className='w-3/4 md:w-1/2 h-2/3 text-justify'>
@@ -48,7 +48,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className='h-[600px]'>
+        <div className='h-[600px] mx-3'>
           <div className='text-3xl text-white'>Career</div>
           <div className='text-white'>
             <p className='pt-8 pb-3 text-lg'>Smart India Hackathon Finalist 2024</p>

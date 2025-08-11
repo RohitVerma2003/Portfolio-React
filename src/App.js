@@ -9,6 +9,7 @@ import Reminder from './Components/Reminder';
 import Stack from './Components/Stack';
 import Hacks from './Components/Hacks';
 import About from './Components/About';
+import ProjectDetails from './Components/ProjectDetails';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/reminder' element={<Reminder />}/>
         <Route path='/stack' element={<Stack />}/>
         <Route path='/hacks' element={<Hacks />}/>
+        <Route path='/project-details/:slug' element={<ProjectDetails />}/>
       </Routes>
       <Footer />
     </div>
