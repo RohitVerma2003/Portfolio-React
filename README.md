@@ -1,4 +1,4 @@
-** This is previous repository the new one is private**
+## This is previous repository the new one is private
 
 # Portfolio-React
 
