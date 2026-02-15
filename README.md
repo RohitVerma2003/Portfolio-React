@@ -1,3 +1,5 @@
+** This is previous repository the new one is private**
+
 # Portfolio-React
 
 **Portfolio-React** is a personal portfolio website built using **React.js**. This portfolio is designed to showcase all the essential information about me, including my professional experience, projects, skills, and contact details. The portfolio is developed with a clean and modern design, focusing on providing a smooth user experience and an engaging way to present personal achievements and capabilities.
